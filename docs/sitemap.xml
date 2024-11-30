@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://cullenmacdonald.com/</loc>
     <lastmod>2024-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/agility/</loc>
+    <loc>https://cullenmacdonald.com/agility/</loc>
     <lastmod>2024-11-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/velocity-and-story-points/</loc>
+    <loc>https://cullenmacdonald.com/velocity-and-story-points/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/how-we-code-review/</loc>
+    <loc>https://cullenmacdonald.com/how-we-code-review/</loc>
     <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/value-based-velocity/</loc>
+    <loc>https://cullenmacdonald.com/value-based-velocity/</loc>
     <lastmod>2024-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/bottlenecks-and-pull-requests/</loc>
+    <loc>https://cullenmacdonald.com/bottlenecks-and-pull-requests/</loc>
     <lastmod>2024-02-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/things-to-follow/</loc>
+    <loc>https://cullenmacdonald.com/things-to-follow/</loc>
     <lastmod>2024-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://cullenmacdonald.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://cullenmacdonald.com/tags/</loc>
   </url>
 </urlset>
