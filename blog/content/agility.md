@@ -1,5 +1,5 @@
 ---
-lastmod: '2024-11-27 13:09:07'
+date: 2024-11-05 00:00:00
 title: On Agility
 ---
 
@@ -14,9 +14,3 @@ There seems to be two Actual Outcomes when some new piece of information is lear
 The other outcome (the one I think is the funniest) is that your “agile” method literally prevents you and your team from shifting gears because the process you’ve put in place is too rigid. “We can’t just add an extra week to the current sprint, we have all the meetings already scheduled.” “We can’t just do a random grooming meeting before we do our sprint planner, that’s not how we do this!” 
 
 I don’t really have a diagnosis for this problem. I think we need to think about if we actually want to be Agile or not. I think it’s ok to not be, but we should just be honest about it because then we can actually build a process that enables us to do the right work. I think some projects probably require a specifically non-agile way of planning and executing the work. I think if we do want to be agile, we need to be more agile about The Way We Do Agile.
-
----
-Origin:  
-References: [[Agile]] 
-Tags: #inbox/in-progress #wtp-draft #blog/publish
-Created: [[2024-11-05]]

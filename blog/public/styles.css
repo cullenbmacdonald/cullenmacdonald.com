@@ -6,8 +6,10 @@ body {
     line-height: 30px;
 }
 
-main {
+main, header, nav {
     max-width: 948px;
+    margin: auto;
+    display: block;
 }
 
 blockquote {

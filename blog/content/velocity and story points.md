@@ -1,5 +1,5 @@
 ---
-lastmod: '2024-11-27 13:23:00'
+date: 2024-08-15 00:00:00
 title: Velocity and Story Points
 ---
 
@@ -32,10 +32,3 @@ Thirdly, when speaking to the rest of the org, the team can talk about the “po
 At the end of the day, there's a lot to be unpacked here. I still haven’t fully addressed how the Sprint Value Delivery Goal improves the hit rate of deadlines. In my experience, the team-unifying outcomes of using Value as a measure of velocity has been worth it regardless of actual or theoretical improvements to shipping The Whole Feature on time. At the very least, we’ll all have a shared sprintly target to aim at that is expressed in the same metric as the quarterly goal: Shipping Stuff That Matters.
 
 Delivering Value to the business is the reason we exist as a team in the first place, maybe we should be using that as the measurement of our impact.
-
----
-
-Origin: written internally for [[Justworks]]
-References: [[Story Points]] [[02 - areas/inbox/Agile|Agile]]
-Tags: #inbox/in-progress #wtp-draft #blog/publish
-Created: [[2024-08-15]]

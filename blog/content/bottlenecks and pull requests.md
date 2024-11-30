@@ -1,5 +1,5 @@
 ---
-lastmod: '2024-11-28 12:25:36'
+date: 2024-02-10 00:00:00
 title: Bottlenecks and Pull Requests
 ---
 
@@ -48,10 +48,3 @@ The goal here is engineering morale, and I am stoked that we found a very cool t
 But my challenge to you is this: plan the work in such a way that each ticket can independently get merged into `main`. Make the tickets right sized so that you can get a few merged a week. This means, when writing tickets, think about the size you estimate it to be. If you think a ticket will take longer than three days, turn it into two tickets at that point, not after youve done all the work and are trying to break it up into multiple PRs. Don't open more than one PR at a time because thats you stacking more work up behind the bottleneck in the system. Doing this consistently will feel great, will make it easier to predict when things are due, and will reduce the frustration/headache of managing multiple interrelated PRs.
 
 **In summary, push the breaking up of the work into multiple PRs** _**before**_ **you do the work. Put that plan into separate tickets, and do one ticket at a time until it is merged to main.**
-
-
----
-Origin: response to a comment by [[Jason Liggayu]] on the original publishing of [[Things To Follow]] in an internal confluence
-References: 
-Tags: #blog/publish #whatsthepoint/notes 
-Created: [[2024-2-10]]

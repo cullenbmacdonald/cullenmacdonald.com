@@ -1,5 +1,5 @@
 ---
-lastmod: '2024-11-27 14:10:11'
+date: 2024-01-27 00:00:00
 title: Things To Follow
 ---
 
@@ -22,10 +22,3 @@ title: Things To Follow
 - No ticket should be estimated to take longer than three business days to merge. 
     - If you have a ticket that takes longer than three days, figure out how to get what youve done so far merged, and make a new ticket for the rest. Try to avoid “one more day and then _today_ it gets merged. 
     - A PR with a single concept is much easier to review accurately & quickly than one with several things all smooshed together even if they are part of the same feature. Atomic commits are also very, very helpful for reviewers.
-
-
----
-Origin: [[Justworks]] [[Crimson Sage]]
-References: [[Crimson Sage]] [[Story Points]] [[Agile]] [[Pull Request]]
-Tags: #inbox/in-progress #blog/publish 
-Created: [[2024-01-27]]

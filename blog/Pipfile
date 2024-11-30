@@ -4,14 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pandoc = "==2.4"
 python-frontmatter = "==1.1.0"
-plumbum = "==1.8.3"
-ply = "==3.11"
-pyyaml = "==6.0.1"
+obsidian-to-hugo = "*"
+pandoc = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
-python_full_version = "3.7.17"
+python_version = "3.8"

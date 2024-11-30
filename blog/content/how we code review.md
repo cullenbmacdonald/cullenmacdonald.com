@@ -1,5 +1,5 @@
 ---
-lastmod: '2024-11-27 13:22:51'
+date: 2024-04-15 00:00:00
 title: How We Code Review
 ---
 
@@ -34,9 +34,3 @@ A code review is our first line of defense when it comes to shipping high qualit
 1. Give it a second. People have other work they are probably finishing up, take the break you have to go give some rock solid code reviews. Earn some good will and bargaining chips!
 2. Use standup. Standup is the premium opportunity to tell people you will need code review. If your ticket is on the critical path, they should be more than happy to prioritize code review that day
 3. When all else fails, send an invite to block time on people’s calendars to code review your work.
-
----
-Origin:  Wrote the first version at [[The Wing]]
-References:  [[Code Review]]
-Tags: #inbox/in-progress #blog/publish
-Created: [[2024-04-15]]
