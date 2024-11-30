@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Cullen MacDonald  | How We Code Review</title>
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	
+	
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	
+	<style>
+		 html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}:root{-moz-tab-size:4;-o-tab-size:4;tab-size:4}html{-webkit-text-size-adjust:100%;line-height:1.15}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;margin:0}hr{height:0}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{padding:0}progress{vertical-align:baseline}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+	</style>
+	<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+	<header><h1>Cullen MacDonald</h1></header>
+	<aside>
+		<a href="mailto:hello@cullenmacdonald.com">email</a>
+		<a href="https://www.linkedin.com/in/cullen-macdonald-2a097959">linkedin</a>
+		<a href="http://github.com/cullenbmacdonald">github</a>
+		<a href="http://localhost:1313/">this website</a>
+	</aside>
+	<main role="main">
+		
+
+<article>
+
+	<header>
+		<h2>How We Code Review</h2>
+		
+		<time datetime="2024-11-27T13:22:51Z">November 27, 2024</time>
+	</header>
+
+	<section><blockquote>
+<p>This has been written and rewritten a couple times for a handful of different teams. Consider it a starting place/template</p>
+</blockquote>
+<p>All of our engineering work makes it to production by first passing through a code review. No line of code is too small or inconsequential to bypass this part of our product lifecycle. We should be aiming for quick turn around on code review and merging/deploying. Firstly, it feels great to have momentum on work. Secondly, it prevents existing work from getting stale, rotting away in a PR. But most importantly, work isn’t done until it is merged, so helping your coworkers get their things across the line is the most important thing you can be doing!</p>
+<h2 id="opening-a-pull-request">Opening a Pull Request</h2>
+<p>When opening a pull, a few things will help get quick and actionable feedback.</p>
+<ol>
+<li>Use the PR template that is added by default
+<ol>
+<li>. Reference the ticket</li>
+<li>provide a test plan with relevant login info and environment preparation</li>
+</ol>
+</li>
+<li>Give yourself a code review. How embarrassing would if be if you&rsquo;ve been complaining that no one is looking at your PR and then there&rsquo;s a really silly oopsie daisy right there you could have found if you looked?
+<ol>
+<li>Test your own test plan line for line.</li>
+<li>Go through your diff, add some comments for the other reviewers if there is some noise they can &ldquo;ignore&rdquo; or things worth calling out.</li>
+<li>If your PR contains a migration, ensure it doesn’t conflict with migrations other folks are working on. Made changes to the API? Make sure they wont break support for employee app or tools</li>
+</ol>
+</li>
+<li>Add at least two code reviewers. We’re still building all new stuff and it&rsquo;s important to make sure more than just one other person sees the foundations you&rsquo;re building.</li>
+</ol>
+<h2 id="giving-a-code-review">Giving a Code Review</h2>
+<p>A code review is our first line of defense when it comes to shipping high quality software. It also ensures a ticket soars through any non-engineering testing and goes to production faster. Reviewing code should be ~50% of your &ldquo;code related duties&rdquo; and you should feel a sense of accomplishment if you spend a whole afternoon just reviewing pull requests.</p>
+<ol>
+<li>Look at the ticket the work was for. Having an understanding of the goal of the ticket is the first step to making sure the work was done correctly</li>
+<li>Go through the test plan in the ticket. Make sure it works! This is before you&rsquo;ve even looked at any code at all.</li>
+<li>Review the code
+<ol>
+<li>Provide helpful comments on syntax, organization, and performance</li>
+<li>We are still a small team, sometimes its ok to ask someone to answer a question in person instead of leaving a comment on their pull</li>
+</ol>
+</li>
+<li>If you are assigned, you need to review!
+<ol>
+<li>Please don&rsquo;t let 24 hours pass before completing the review</li>
+<li>If you are unable for any reason to give the code review, let the person know as soon as possible</li>
+</ol>
+</li>
+</ol>
+<h2 id="how-to-get-feedback">How to get feedback</h2>
+<ol>
+<li>Give it a second. People have other work they are probably finishing up, take the break you have to go give some rock solid code reviews. Earn some good will and bargaining chips!</li>
+<li>Use standup. Standup is the premium opportunity to tell people you will need code review. If your ticket is on the critical path, they should be more than happy to prioritize code review that day</li>
+<li>When all else fails, send an invite to block time on people’s calendars to code review your work.</li>
+</ol>
+<hr>
+<p>Origin:  Wrote the first version at [[The Wing]]
+References:  [[Code Review]]
+Tags: #inbox/in-progress #blog/publish
+Created: [[2024-04-15]]</p>
+</section>
+
+</article>
+
+	</main>
+</body>
+</html>

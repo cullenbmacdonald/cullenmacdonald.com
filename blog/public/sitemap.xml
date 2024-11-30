@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/bottlenecks-and-pull-requests/</loc>
+    <lastmod>2024-11-28T12:25:36+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2024-11-28T12:25:36+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/things-to-follow/</loc>
+    <lastmod>2024-11-27T14:10:11+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/velocity-and-story-points/</loc>
+    <lastmod>2024-11-27T13:23:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/how-we-code-review/</loc>
+    <lastmod>2024-11-27T13:22:51+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/value-based-velocity/</loc>
+    <lastmod>2024-11-27T13:22:43+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/agility/</loc>
+    <lastmod>2024-11-27T13:09:07+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+  </url>
+</urlset>

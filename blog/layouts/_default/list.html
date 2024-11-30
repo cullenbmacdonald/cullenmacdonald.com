@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article>
+	<section>
+		{{- .Content -}}
+	</section>
+	<section>
+		<ul>
+			{{ range .Paginator.Pages }}
+			<li>		
+				<p>
+					<a href="{{ .Permalink }}">
+						{{ .Title }}
+					</a> - <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+						{{- .Date.Format "January 2, 2006" -}}
+					</time>
+				</p>
+			</li>
+			{{ end }}
+		</ul>
+	</section>
+	{{- template "_internal/pagination.html" . -}}
+</article>
+{{ end }}
