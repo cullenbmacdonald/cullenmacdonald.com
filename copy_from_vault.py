@@ -12,21 +12,15 @@ import frontmatter
 
 git = os.getenv("git")
 secondbrain = "/Users/cullenmacdonald/Documents/cullen"
-secondbrain_public = "/users/cullenmacdonald/dev/cullenmacdonald.com/blog/content"
+secondbrain_public = "/users/cullenmacdonald/dev/cullenmacdonald.com/content"
 
 # define paths
 second_brain_path = str(secondbrain)  # "/tmp/second-brain-tmp"
 public_folder_path_copy = str(secondbrain_public)
 public_brain_image_path = os.path.join(public_folder_path_copy, "images")
 
-
 regexp_md_images = "!\[\[(.*?)\]\](.*)\s"
 h1 = "(?m)^#(?!#)(.*)"
-h2 = "(?m)^#{2}(?!#)(.*)"
-h3 = "(?m)^#{3}(?!#)(.*)"
-h4 = "(?m)^#{4}(?!#)(.*)"
-h5 = "(?m)^#{5}(?!#)(.*)"
-h6 = "(?m)^#{6}(?!#)(.*)"
 
 def process_file(original_file_path: str, copied_file_path: str) -> None:
     convert_to_frontmatter(copied_file_path)
@@ -62,7 +56,7 @@ def convert_to_frontmatter(file_path):
             if key in FRONTMATTER_KEYS:
                 if key == "Created":
                     # Remove brackets from [[YYYY-MM-DD]] format
-                    value = datetime.strptime(re.sub(r'\[\[(.*?)\]\]', r'\1', value), "%Y-%m-%d")   
+                    value = datetime.strptime(re.sub(r'\[\[(.*?)\]\]', r'\1', value), "%Y-%m-%d")
                     key = "date"
                 metadata[key] = value
         # Remove the metadata block from the content
@@ -92,7 +86,7 @@ def copy_file(file_path: str, copy_to_path: str) -> Tuple[bool, str]:
 
     # print(f"publish: {file_path}, ln: {line_number}")
     # copy that file to the publish notes directory
-    copied_file_path = os.path.join(copy_to_path, file_name_lower) 
+    copied_file_path = os.path.join(copy_to_path, file_name_lower)
     shutil.copy(file_path, copied_file_path)
 
     return True, copied_file_path
@@ -122,13 +116,14 @@ def list_images_from_markdown(file_path: str):
     # print(f"image: {file_path}, ln: {line}")
     pass
 
+
 def do_the_thing(second_brain_path: str, copy_to_path: str) -> None:
     for root, dirs, files in os.walk(second_brain_path):
         for file_path in [os.path.join(root, f) for f in files if f.endswith(".md")]:
             copied, copied_file_path = copy_file(file_path, copy_to_path)
             if not copied:
                 continue
-            
+
             process_file(file_path, copied_file_path)
 
 
