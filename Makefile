@@ -7,7 +7,8 @@ update-content:
 
 build-site:
 	hugo build
-	mkdir -f docs
+	rm -rf docs
+	mkdir -p docs
 	mv public/* docs/
 
 dev:
