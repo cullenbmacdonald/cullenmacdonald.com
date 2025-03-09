@@ -95,8 +95,6 @@ def find_image_and_copy(image_name: str, root_path: str, public_brain_image_path
     text_files = glob.glob(root_path + "/**/" + image_name, recursive=True)
     for file in text_files:
         shutil.copy(file, public_brain_image_path)
-        # print(f"image `{file}` copied to {public_brain_image_path}")
-
 
 def list_images_from_markdown(file_path: str):
     # search for images in markdown file
@@ -107,13 +105,9 @@ def list_images_from_markdown(file_path: str):
         for image in images:
             image_name = image[0]
             if image_name:
-                # find image recursively in folder and copy to public image folder
-                # print(f"--image: {image_name}")
                 find_image_and_copy(
                     image_name, second_brain_path, public_folder_path_copy
                 )
-
-    # print(f"image: {file_path}, ln: {line}")
     pass
 
 

@@ -1,5 +1,5 @@
 install:
-	brew install hugo
+	brew install hugo pandoc
 	pipenv install
 
 update-content:
