@@ -7,7 +7,8 @@ update-content:
 
 build-site:
 	hugo build
-	rm -rf docs
+	find docs -type f ! -name 'CNAME' -delete
+	find docs -type d -empty -delete
 	mkdir -p docs
 	mv public/* docs/
 
