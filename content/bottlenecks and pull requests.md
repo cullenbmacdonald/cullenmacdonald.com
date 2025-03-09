@@ -9,7 +9,7 @@ I have two main goals with my process things. 1. engineering morale fueled by re
 
 It makes it easier to plan, easier to set goals, and then to hit them (all consistently).
 
-Ok so how do you drive consistency for engineering? My preferred method is to follow most of the things in [[Things To Follow|here]]
+Ok so how do you drive consistency for engineering? My preferred method is to follow most of the things in [here](/things-to-follow)
 
 Make an epic that represents some meaningful progress towards a change in the system. An epic should be able to be described to non engineers and they should understand that chunk of work’s value
 

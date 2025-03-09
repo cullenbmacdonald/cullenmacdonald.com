@@ -11,8 +11,10 @@ from pandoc.types import *
 import frontmatter
 
 git = os.getenv("git")
-secondbrain = "/Users/cullenmacdonald/Documents/cullen"
-secondbrain_public = "/users/cullenmacdonald/dev/cullenmacdonald.com/content"
+secondbrain = "/Users/cmacdonald/Documents/personal notes"
+secondbrain_public = "/Users/cmacdonald/dev/cullenmacdonald.com/content"
+
+FRONTMATTER_KEYS = ["Created"]
 
 # define paths
 second_brain_path = str(secondbrain)  # "/tmp/second-brain-tmp"
@@ -24,9 +26,8 @@ h1 = "(?m)^#(?!#)(.*)"
 
 def process_file(original_file_path: str, copied_file_path: str) -> None:
     convert_to_frontmatter(copied_file_path)
+    convert_internal_links(copied_file_path)
     list_images_from_markdown(original_file_path)
-
-FRONTMATTER_KEYS = ["Created"]
 
 def convert_to_frontmatter(file_path):
     """
@@ -76,6 +77,39 @@ def convert_to_frontmatter(file_path):
 
     print(f"Converted file: {file_path}")
 
+def convert_internal_links(file_path: str) -> None:
+    """
+    Convert Obsidian-style internal links [[Document Name]] to standard markdown links.
+    
+    Parameters:
+        file_path (str): The path to the markdown file.
+    """
+    # Use absolute path to ensure correct path handling
+    print(f"Processing existing file: {file_path}")
+    
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # Handle links with custom text: [[Document Name|custom text]]
+    def replace_custom_link(match):
+        doc_name = match.group(1).lower().replace(" ", "-")
+        link_text = match.group(2)
+        return f'[{link_text}](/{doc_name})'
+    
+    # Handle standard links: [[Document Name]]
+    def replace_standard_link(match):
+        doc_name = match.group(1)
+        doc_path = doc_name.lower().replace(" ", "-")
+        return f'[{doc_name}](/{doc_path})'
+    
+    # Apply replacements
+    content = re.sub(r'\[\[(.*?)\|(.*?)\]\]', replace_custom_link, content)
+    content = re.sub(r'\[\[(.*?)\]\]', replace_standard_link, content)
+    
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    
+    print(f"Converted internal links in: {file_path}")
 
 def copy_file(file_path: str, copy_to_path: str) -> Tuple[bool, str]:
     with open(file_path, "r") as f:
@@ -120,6 +154,57 @@ def do_the_thing(second_brain_path: str, copy_to_path: str) -> None:
 
             process_file(file_path, copied_file_path)
 
+def process_existing_content(content_dir: str) -> None:
+    """
+    Process all existing markdown files in the content directory.
+    This is useful for updating links in already processed files.
+    
+    Parameters:
+        content_dir (str): The path to the content directory.
+    """
+    print(f"Processing existing content in {content_dir}...")
+    
+    for file_name in os.listdir(secondbrain_public):
+        if file_name.endswith(".md"):
+            file_path = os.path.join(secondbrain_public, file_name)
+            print(f"Processing existing file: {file_path}")
+            
+            # Read the file content
+            with open(file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # Replace Hugo shortcode links with standard markdown links
+            # This pattern handles [text]({< ref "path.md" >})
+            content = re.sub(
+                r'\[([^\]]+)\]\(\{\< ref "([^"]+)" \>\}\)', 
+                lambda m: f'[{m.group(1)}](/{m.group(2).replace(".md", "")})', 
+                content
+            )
+            
+            # Also handle any remaining Obsidian-style links
+            content = re.sub(
+                r'\[\[(.*?)\|(.*?)\]\]', 
+                lambda m: f'[{m.group(2)}](/{m.group(1).lower().replace(" ", "-")})', 
+                content
+            )
+            
+            content = re.sub(
+                r'\[\[(.*?)\]\]', 
+                lambda m: f'[{m.group(1)}](/{m.group(1).lower().replace(" ", "-")})', 
+                content
+            )
+            
+            # Write the updated content back to the file
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(content)
+            
+            print(f"Converted internal links in: {file_path}")
+    
+    print("Finished processing existing content.")
 
 if __name__ == "__main__":
+    # Process files from second brain
     do_the_thing(second_brain_path, public_folder_path_copy)
+    
+    # Process existing content files
+    process_existing_content(public_folder_path_copy)
