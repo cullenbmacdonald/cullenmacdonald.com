@@ -6,7 +6,7 @@ update-content:
 	pipenv run python copy_from_vault.py
 
 build-site:
-	hugo build
+	hugo build --minify
 	find docs -type f ! -name 'CNAME' -delete
 	find docs -type d -empty -delete
 	mkdir -p docs
