@@ -21,7 +21,7 @@ second_brain_path = str(secondbrain)  # "/tmp/second-brain-tmp"
 public_folder_path_copy = str(secondbrain_public)
 public_brain_image_path = os.path.join(public_folder_path_copy, "images")
 
-regexp_md_images = "!\[\[(.*?)\]\](.*)\s"
+regexp_md_images = r"!\[\[(.*?)\]\](.*)\s"
 h1 = "(?m)^#(?!#)(.*)"
 
 def process_file(original_file_path: str, copied_file_path: str) -> None:

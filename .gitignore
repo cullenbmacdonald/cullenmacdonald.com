@@ -1,3 +1,5 @@
 **/*.DS_Store
 **/*.un~
 public/
+__pycache__/
+.agent-*.txt
