@@ -1,4 +1,4 @@
 ---
 title: One Small Thing
-description: Weekly prompts to help you and your team take ownership of how you work—and adapt when things change.
+description: A year of small weekly prompts to help your team notice what’s working, shape how you work, and adapt together as things change.
 ---

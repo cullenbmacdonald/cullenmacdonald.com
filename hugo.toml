@@ -6,7 +6,7 @@ disableKinds = ['taxonomy', 'term']
 
 [params]
   author = 'Cullen MacDonald'
-  description = 'Weekly prompts to help you and your team take ownership of how you work—and adapt when things change.'
+  description = 'A year of small weekly prompts to help your team notice what’s working, shape how you work, and adapt together as things change.'
   email = 'hello@cullenmacdonald.com'
   linkedin = 'https://www.linkedin.com/in/cullen-macdonald-2a097959'
   github = 'https://github.com/cullenbmacdonald'

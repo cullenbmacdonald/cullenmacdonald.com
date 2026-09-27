@@ -1,11 +1,11 @@
 ---
-title: One Small Thing
+title: The First Small Thing
 date: 2026-09-27
 description: It's 11am, do you know what your teams are doing in Standup?
 number: 1
 ---
 
-Companies and teams have their own ways of working. Engineers, product managers, and designers arrive at a new job and spend the first few weeks learning how the team does things. After a while, everyone working on that team just accepts the team's and company's operating system for what it is: fixed, immovable, and flawed but fine.
+Engineers, product managers, and designers arrive at a new job and spend the first few weeks learning how the team does things. After a while, everyone working on that team just accepts the team's and company's operating system for what it is: fixed, immovable, and flawed but fine.
 
 I’ve seen plenty of versions of this. I have my own flavor of Scrum for running product-engineering teams (it barely looks like Scrum), and I’ve worked within other teams’ versions too. Even when the work looks similar, the way teams work can be wildly different.
 
@@ -15,7 +15,7 @@ Most people experience workplace change as something that happens to them. A reo
 
 A big part of a leader’s job is paying attention to how the team works, not just what it delivers. That means making it possible for people to flag problems early, talk about what’s working, and try a small adjustment without treating it like a grand transformation. The point isn’t to change things just to change them. It’s to take responsibility for how the team works and why—and build the muscle to respond when circumstances shift.
 
-So this is a series of 52 small things you or your team can try, one each week. Some are personal prompts to reflect on how you work. Some are small changes to things like how you run standup. Some will ask for participation from the team. They’re meant to be small enough to try without turning them into a major initiative.
+So this is a series of 52 small things you or your team can try, one each week. While they are focused most towards technology teams, many of the prompts are generic enough for anyone to try. Some are personal prompts to reflect on how you work. Some are small changes to things like how you run standup. Some will ask for participation from the team. They’re meant to be small enough to try without turning them into a major initiative.
 
 I hope that after a few months, you’ll have more than a list of things you tried. I hope you’ll see that you can influence how your team works, that you can talk about what’s working and what isn’t, and that trying a small change doesn’t have to be a big, scary commitment.
 
