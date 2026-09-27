@@ -19,3 +19,4 @@ dev:
 publish: update-content build-site
 	git add content static docs
 	git commit -m "publish $$(date +%F)"
+	git push
