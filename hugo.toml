@@ -10,6 +10,7 @@ disableKinds = ['taxonomy', 'term']
   email = 'hello@cullenmacdonald.com'
   linkedin = 'https://www.linkedin.com/in/cullen-macdonald-2a097959'
   github = 'https://github.com/cullenbmacdonald'
+  substack = 'https://cullenm.substack.com'
 
 [outputs]
   home = ['html', 'rss']

@@ -8,6 +8,7 @@
 		<a class="site-title" href="{{ "/" | relURL }}">{{ site.Title }}</a>
 		<nav>
 			{{- with site.GetPage "/one-small-thing" }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+			{{- with site.Params.substack }}<a href="{{ . }}/subscribe" target="_blank" rel="noopener">Subscribe</a>{{ end }}
 			{{- with site.GetPage "/one-small-thing" }}{{ with .OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}{{ end }}
 		</nav>
 	</header>

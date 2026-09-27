@@ -15,6 +15,8 @@
 	<p><a href="{{ $series.RelPermalink }}">See every entry</a>{{ with $series.OutputFormats.Get "rss" }} · <a href="{{ .RelPermalink }}">RSS</a>{{ end }}</p>
 </aside>
 
+{{- partial "subscribe.html" . }}
+
 <nav class="pager">
 	{{- with index (where $series.RegularPages "Params.number" (sub $number 1)) 0 }}
 	<a class="prev" href="{{ .RelPermalink }}"><span>← #{{ .Params.number }}</span>{{ .Title }}</a>

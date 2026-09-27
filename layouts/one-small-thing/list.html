@@ -5,6 +5,7 @@
 	{{- with .Description }}<p class="lede">{{ . }}</p>{{ end }}
 	{{ .Content }}
 </article>
+{{- partial "subscribe.html" . }}
 <section>
 	<h2 class="section-title">Every entry</h2>
 	{{- with .RegularPages.ByParam "number" }}

@@ -376,3 +376,31 @@ th, td {
 .callout > :last-child {
     margin-bottom: 0;
 }
+
+/* Subscribe box */
+
+.subscribe {
+    margin: 2.5rem 0;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.subscribe p:not(.kicker) {
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    background: var(--link);
+    color: var(--bg);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: var(--hover);
+    color: var(--bg);
+}
