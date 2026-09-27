@@ -11,7 +11,7 @@
 </article>
 
 <aside class="series-note">
-	<p><strong>{{ $series.Title }}</strong> is a weekly series. {{ $series.Description }}</p>
+	<p><strong>{{ $series.Title }}</strong>: {{ $series.Description }}</p>
 	<p><a href="{{ $series.RelPermalink }}">See every entry</a>{{ with $series.OutputFormats.Get "rss" }} · <a href="{{ .RelPermalink }}">RSS</a>{{ end }}</p>
 </aside>
 

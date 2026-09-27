@@ -1,4 +1,4 @@
 ---
 title: One Small Thing
-description: One small thing a week you can do at work to help your team get better, braver, and more experimental.
+description: 52 small weekly prompts to help you and your team take ownership of how you work and adapt when things change.
 ---
