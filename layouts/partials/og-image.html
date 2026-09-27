@@ -1,0 +1,25 @@
+{{/* Draws the 1200x630 link-preview card for a page and returns it as a resource at <page>/og.png. */}}
+{{- $bold := resources.Get "fonts/JetBrainsMono-Bold.ttf" }}
+{{- $regular := resources.Get "fonts/JetBrainsMono-Regular.ttf" }}
+{{- $series := site.GetPage "/one-small-thing" }}
+{{- $kicker := site.Title }}
+{{- $title := .Title }}
+{{- $subtitle := "" }}
+{{- if or .IsHome (eq . $series) }}
+	{{- $kicker = "A weekly series" }}
+	{{- $title = $series.Title }}
+	{{- $subtitle = $series.Description }}
+{{- else if eq .Section "one-small-thing" }}
+	{{- $kicker = printf "%s · #%v" $series.Title .Params.number }}
+{{- end }}
+{{- $filters := slice
+	(images.Text (upper $kicker) (dict "font" $bold "color" "#ebcb8b" "size" 32 "x" 80 "y" 72))
+	(images.Text $title (dict "font" $bold "color" "#eceff4" "size" 64 "linespacing" 14 "x" 80 "y" 140))
+	(images.Text "cullenmacdonald.com" (dict "font" $regular "color" "#d8dee9" "size" 28 "x" 80 "y" 562))
+}}
+{{- with $subtitle }}
+	{{- $filters = $filters | append (images.Text . (dict "font" $regular "color" "#a7b1c2" "size" 34 "linespacing" 14 "x" 80 "y" 250)) }}
+{{- end }}
+{{- $path := printf "%sog.png" (strings.TrimPrefix "/" .RelPermalink) }}
+{{- $card := resources.Copy $path ((resources.Get "images/og-base.png").Filter $filters) }}
+{{- return $card }}
