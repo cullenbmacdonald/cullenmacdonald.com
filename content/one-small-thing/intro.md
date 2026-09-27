@@ -5,9 +5,7 @@ description: It's 11am, do you know what your teams are doing in Standup?
 number: 1
 ---
 
-Engineers, product managers, and designers arrive at a new job and spend the first few weeks learning how the team does things. After a while, everyone working on that team just accepts the team's and company's operating system for what it is: fixed, immovable, and flawed but fine.
-
-I’ve seen plenty of versions of this. I have my own flavor of Scrum for running product-engineering teams (it barely looks like Scrum), and I’ve worked within other teams’ versions too. Even when the work looks similar, the way teams work can be wildly different.
+Every team has a way of doing things. How meetings run, how decisions get made, what happens when work gets stuck. When you join a team, you learn those things so you can get on with the work. After a while, they can stop feeling like choices anyone made. They’re just how work works.
 
 The trouble is that the way a team works can keep going long after the circumstances that shaped it have changed. People come and go. Customers change. Products and codebases grow. Teams move offices, go remote, or return to the office. A process that made sense for a while can stop making sense. If nobody feels able to say so, it can keep going long after it’s stopped helping. If the org doesn't have the muscle to contend with those pains, then they are addressed long after they start hurting.
 
