@@ -1,6 +1,6 @@
 ---
-date: 2024-02-10 00:00:00
 title: Bottlenecks and Pull Requests
+date: 2024-02-10
 ---
 
 Let me start by saying my thinking is actually more of a belief. There is some pseudo science and anecdata baked in, but it's more based on gut checks than any cold hard facts. Bad news for you, changing someone’s belief is harder than changing someone’s thinking based on fact. Worse news for you: this is belief ive had about teams and git process for like 8 years lol.
@@ -9,7 +9,7 @@ I have two main goals with my process things. 1. engineering morale fueled by re
 
 It makes it easier to plan, easier to set goals, and then to hit them (all consistently).
 
-Ok so how do you drive consistency for engineering? My preferred method is to follow most of the things in [here](/things-to-follow)
+Ok so how do you drive consistency for engineering? My preferred method is to follow most of the things in [here](/things-to-follow/)
 
 Make an epic that represents some meaningful progress towards a change in the system. An epic should be able to be described to non engineers and they should understand that chunk of work’s value
 

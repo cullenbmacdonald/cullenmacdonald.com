@@ -1,0 +1,10 @@
+{{/* Numbered list of series entries, newest first. Context: slice of pages. */}}
+<ol class="entries" reversed>
+	{{- range . }}
+	<li>
+		<span class="entry-number">#{{ .Params.number }}</span>
+		<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+		<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+	</li>
+	{{- end }}
+</ol>

@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{- $series := site.GetPage "/one-small-thing" }}
+{{- $entries := ($series.RegularPages.ByParam "number").Reverse }}
+<section class="hero">
+	<p class="kicker">A weekly series</p>
+	<h1><a href="{{ $series.RelPermalink }}">{{ $series.Title }}</a></h1>
+	<p class="lede">{{ $series.Description }}</p>
+</section>
+
+{{- with index $entries 0 }}
+<article class="card">
+	<p class="kicker">Latest · #{{ .Params.number }}</p>
+	<h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+	{{- partial "meta.html" . }}
+	<p>{{ .Description | default (.Summary | plainify | truncate 240) }}</p>
+	<p><a class="more" href="{{ .RelPermalink }}">Read #{{ .Params.number }} →</a></p>
+</article>
+{{- end }}
+
+{{- if gt (len $entries) 1 }}
+<section>
+	<h2 class="section-title">Every entry</h2>
+	{{ partial "entry-list.html" $entries }}
+</section>
+{{- end }}
+
+{{- $posts := where (where site.RegularPages "Section" "") "Params.manual" "!=" true }}
+{{- with $posts }}
+<section class="other-writing">
+	<h2 class="section-title">Other writing</h2>
+	<ul class="posts">
+		{{- range .ByDate.Reverse }}
+		<li><a href="{{ .RelPermalink }}">{{ .Title }}</a> <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time></li>
+		{{- end }}
+	</ul>
+</section>
+{{- end }}
+{{ end }}

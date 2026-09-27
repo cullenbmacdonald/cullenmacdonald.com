@@ -1,0 +1,15 @@
+{{ define "main" }}
+<article class="prose">
+	<p class="kicker">A weekly series</p>
+	<h1>{{ .Title }}</h1>
+	{{- with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+	{{ .Content }}
+</article>
+<section>
+	<h2 class="section-title">Every entry</h2>
+	{{- with .RegularPages.ByParam "number" }}
+	{{ partial "entry-list.html" .Reverse }}
+	{{- end }}
+	{{- with .OutputFormats.Get "rss" }}<p class="muted">Follow along with <a href="{{ .RelPermalink }}">RSS</a>.</p>{{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{- $series := .CurrentSection }}
+{{- $number := .Params.number }}
+<article class="prose">
+	<header>
+		<p class="kicker"><a href="{{ $series.RelPermalink }}">{{ $series.Title }}</a> · #{{ $number }}</p>
+		<h1>{{ .Title }}</h1>
+		{{- partial "meta.html" . }}
+	</header>
+	{{ .Content }}
+</article>
+
+<aside class="series-note">
+	<p><strong>{{ $series.Title }}</strong> is a weekly series. {{ $series.Description }}</p>
+	<p><a href="{{ $series.RelPermalink }}">See every entry</a>{{ with $series.OutputFormats.Get "rss" }} · <a href="{{ .RelPermalink }}">RSS</a>{{ end }}</p>
+</aside>
+
+<nav class="pager">
+	{{- with index (where $series.RegularPages "Params.number" (sub $number 1)) 0 }}
+	<a class="prev" href="{{ .RelPermalink }}"><span>← #{{ .Params.number }}</span>{{ .Title }}</a>
+	{{- else }}<span></span>{{ end }}
+	{{- with index (where $series.RegularPages "Params.number" (add $number 1)) 0 }}
+	<a class="next" href="{{ .RelPermalink }}"><span>#{{ .Params.number }} →</span>{{ .Title }}</a>
+	{{- end }}
+</nav>
+{{ end }}

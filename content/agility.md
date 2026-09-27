@@ -1,6 +1,6 @@
 ---
-date: 2024-11-05 00:00:00
 title: On Agility
+date: 2024-11-05
 ---
 
 We spend so much time focusing on how our teams can be agile. There are methods and books and classes and certificates and tons of arguments online about the pros and cons of one way versus another. Whats the point of agility? Why is agility the goal? Are you sure you actually want that?

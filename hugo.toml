@@ -2,3 +2,15 @@ baseURL = 'https://cullenmacdonald.com/'
 languageCode = 'en-us'
 title = 'Cullen MacDonald'
 enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  author = 'Cullen MacDonald'
+  description = 'One small thing a week you can do at work to help your team get better, braver, and more experimental.'
+  email = 'hello@cullenmacdonald.com'
+  linkedin = 'https://www.linkedin.com/in/cullen-macdonald-2a097959'
+  github = 'https://github.com/cullenbmacdonald'
+
+[outputs]
+  home = ['html', 'rss']
+  section = ['html', 'rss']

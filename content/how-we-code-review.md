@@ -1,6 +1,6 @@
 ---
-date: 2024-04-15 00:00:00
 title: How We Code Review
+date: 2024-04-15
 ---
 
 > This has been written and rewritten a couple times for a handful of different teams. Consider it a starting place/template
