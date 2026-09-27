@@ -7,7 +7,7 @@ number: 1
 
 Every team has a way of doing things. How meetings run, how decisions get made, what happens when work gets stuck. When you join a team, you learn those things so you can get on with the work. After a while, they can stop feeling like choices anyone made. They’re just how work works.
 
-The trouble is that the way a team works can keep going long after the circumstances that shaped it have changed. People come and go. Customers change. Products and codebases grow. Teams move offices, go remote, and then return again. A process that made sense at a time can stop making sense. If nobody feels able to say so, it can keep going long after it’s stopped helping. If the org doesn't have the muscle to contend with those pains, then they are addressed long after they start hurting.
+The trouble is that the way a team works can keep going long after the circumstances that shaped it have changed. People come and go. Customers change. Products and codebases grow. Teams move offices, go remote, and then return again. A process that made sense at a time can stop making sense. If the org doesn't have the muscle to contend with those pains, then they are addressed long after they start hurting.
 
 Most people experience process as something that happens to them. A reorg, a new customer, a new priority: suddenly the way the team works is different, and you may not have had much say in it. You may not be able to control those bigger changes, but you can have some agency in how your team responds. And if you’re a leader, helping create that feeling of agency is part of your job.
 
