@@ -17,6 +17,6 @@ dev:
 
 # import, build, and commit locally; review with `git show --stat` then push
 publish: update-content build-site
-	git add content static docs
+	git add content static assets layouts hugo.toml Makefile docs
 	git commit -m "publish $$(date +%F)"
 	git push
