@@ -348,3 +348,31 @@ th, td {
     font-size: 0.8rem;
     color: var(--muted);
 }
+
+/* Obsidian callouts, e.g. the weekly prompt */
+
+.callout {
+    margin: 2.5rem 0;
+    padding: 1.25rem 1.5rem;
+    background: var(--surface);
+    border-left: 4px solid var(--kicker);
+    border-radius: 0 6px 6px 0;
+}
+
+.callout-title {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--kicker);
+}
+
+.callout ul,
+.callout ol {
+    padding-left: 2rem;
+}
+
+.callout > :last-child {
+    margin-bottom: 0;
+}

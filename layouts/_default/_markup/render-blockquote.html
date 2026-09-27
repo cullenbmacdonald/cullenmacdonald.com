@@ -1,0 +1,13 @@
+{{- /* Obsidian callouts (> [!type] Title) render as boxes; [!prompt] is the weekly small thing. */ -}}
+{{- if eq .Type "alert" }}
+<aside class="callout callout-{{ .AlertType }}">
+	<p class="callout-title">
+		{{- with .AlertTitle }}{{ . }}{{ else }}{{ if eq .AlertType "prompt" }}This week’s prompt{{ else }}{{ .AlertType | title }}{{ end }}{{ end -}}
+	</p>
+	{{ .Text }}
+</aside>
+{{- else }}
+<blockquote>
+	{{ .Text }}
+</blockquote>
+{{- end }}
