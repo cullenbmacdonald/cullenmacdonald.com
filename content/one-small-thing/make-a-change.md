@@ -1,6 +1,6 @@
 ---
 title: Make a Change
-date: 2026-10-10
+date: 2026-10-11
 number: 3
 ---
 
