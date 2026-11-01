@@ -8,7 +8,7 @@ Last week, the thing we changed was what we thought our goal was on a given day.
 
 This week, I want you to use that same practice of taking the entire team’s context into account and try to frame a single goal for the team to accomplish by Friday. What’s the one thing you want to be able to say is true at the end of the week? Talk it through together, because the people doing the work will have a lot to say about what’s possible and what they’ll need from each other to get there.
 
-Don't get too caught up in that goal being "the entire feature is shipped." All that matters is that it is measurable and objectively measurable.
+Don't get too caught up in that goal being "the entire feature is shipped." All that matters is that it is objectively measurable.
 
 Heads up, the thing one teammate is working on might not contribute to that goal. That doesn’t mean it isn’t important, or that they’ve been spending their time on the wrong thing, it just means if push came to shove, we should shift our attention to the thing the team wanted to say was true by Friday. And if you’re the manager, you need to help make that tradeoff real and safe, which means being clear about what can wait and backing people up when they let it wait. It’s hard to believe you have permission to focus when you’re still going to be asked why all the other stuff didn’t get done.
 
@@ -18,8 +18,8 @@ In Standup each day, remind the team what the goal for the week is and ask them 
 
 And when Friday comes, look at what happened. Did you get there? What helped, what got in the way, and did having a shared goal change any of the decisions you made during the week? You might find that the goal was too big or that something important came up and you needed to change it.
 
-Setting a weekly goal also gives the team something to celebrate together. The person who wrote the code, the person who paired with them when they got stuck, the person who made time for the review, the person who was on-call handling bugs so everyone else could focus on building somethign new, they all helped make that thing true. Everyone gets to celebrate, and everyone gets to see how their part helped the team get there.
+Setting a weekly goal also gives the team something to celebrate together. The person who wrote the code, the person who paired with them when they got stuck, the person who made time for the review, the person who was on-call handling bugs so everyone else could focus on building something new, they all helped make that thing true. Everyone gets to celebrate, and everyone gets to see how their part helped the team get there.
 
-Don't keep the reflections on how this process change is going to yourself, ask the team what they think. Maybe you do a team retro? I recommend hearing from folks on Friday rather than waiting for a room. The thing to encourage the team to do is not to reflect on the goal itself but the process of framing and setting it. Take those reflections into the following week. My challenge to you is that you stick with this weekly goal setting and review for six weeks. 
+Don't keep the reflections on how this process change is going to yourself, ask the team what they think. Maybe you do a team retro? I recommend hearing from folks on Friday rather than waiting a room a week from now. The thing to encourage the team to do is to reflect on more than the results of the goal itself. Really dig into the process of framing and setting it. Take those reflections into the following Monday when you do it all again. 
 
-Next week we'll start to tinker with how we structure moments of reflection.
+Because this will take some getting used to, my challenge to you is that you stick with this weekly goal setting and review for at least six weeks. Next week we'll start to tinker with how we structure moments of reflection, which I hope will make it even easier to improve upon how the weekly goal setting is going.
